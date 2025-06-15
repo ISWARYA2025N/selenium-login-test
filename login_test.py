@@ -39,16 +39,16 @@ WebDriverWait(driver, 5).until(
 
 print("Logout successful ")
 
-# Step 4: Verify login successful and take screenshot
+# Step 5: Verify login successful and take screenshot
 dashboard_element = wait.until(EC.presence_of_element_located((By.XPATH, "//h6[text()='Dashboard']")))
 print("✅ Login successful. Dashboard is visible.")
 
-#  Step 5: Save screenshot
+#  Step 6: Save screenshot
 driver.save_screenshot("dashboard.png")
 print("📸 Screenshot saved as 'dashboard.png'")
 
-# Step 6: Wait to see dashboard
+# Step 7: Wait to see dashboard
 time.sleep(1000)
 
-# Step 7: Close browser
+# Step 8: Close browser
 driver.quit()
