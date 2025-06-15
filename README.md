@@ -63,10 +63,3 @@ Edit
 ✅ TEST CASE PASSED: Successfully logged in.
 # OR
 ❌ TEST CASE FAILED: Login unsuccessful.
-✍️ Author
-Iswarya N
-Fresher | Software Testing Enthusiast
-📍 India
-
-📌 License
-This project is for educational purposes only.
