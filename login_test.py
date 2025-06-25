@@ -12,6 +12,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 # Step 1: Open the OrangeHRM login page
 driver.get("https://opensource-demo.orangehrmlive.com/")
 driver.maximize_window()
+
 wait = WebDriverWait(driver, 10)
 
 # Step 2: Locate the username and password fields and enter credentials
@@ -37,7 +38,7 @@ WebDriverWait(driver, 5).until(
     EC.element_to_be_clickable((By.XPATH, "//a[text()='Logout']"))
 ).click()
 
-print("Logout successful ")
+print("Logout successful ✅")
 
 # Step 5: Verify login successful and take screenshot
 dashboard_element = wait.until(EC.presence_of_element_located((By.XPATH, "//h6[text()='Dashboard']")))
